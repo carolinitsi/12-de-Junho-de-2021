@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilizacao/estilo.css">
+    <link rel="sortcut icon" href="estilizacao/imagens/icon.png" type="image/x-icon" />
+    <title>12 de Junho de 2021</title>
+</head>
+<body>
+    <header>
+        <div class="fundo">
+        <h1 class="titulo_principal"> Feliz dia 12</h1>
+        <button id="bt_lateral" class="bt_post_produto" type="submit" name="novo_produto" value="<?php echo $usuario['id']; ?>"> Clique aqui </button> 
+
+        </div>
+    </header>
+    <section>
+        <h1>Eduardo Schuller</h1>
+
+        <p>O amor é um sentimento doido né? Complicado. Estranho. Misterioso. Bonito.</p>
+
+        <p>Enfim, acho que você sabe oque é o amor... Então, invés de vir falar sobre o amor, vim falar sobre como é amar você.</p>
+
+        <p>Hoje digo que te amar é saber que tudo bem você não me dar "Bom dia", que tudo bem você se irritar, que tudo bem você não querer sair, ou fazer algo.
+        Nada disso importa afinal. </p>
+
+        <p>Quando o amor se torna tranquilo a gente sabe que nem tudo são flores. Nada é perfeito. Mas mesmo
+        com as imperfeições, ainda é melhor que todo o resto. Sinto que um dia com você é um dia vivído de verdade. 
+        Confesso que quando estamos juntos é como se ali fosse o melhor lugar do mundo. Não consigo se quer imaginar estar em outro lugar.
+        Em meio a minha rotina de trabalho e estudos durante a semana, sempre tenho como companhia aquela pequena ansiedade pelo fim de semana,
+        por você.E quando ele chega, mds que delicia!Saber que teremos as nossas conversas sobre os assuntos da semana, as nossas lutinhas (que sempre te deixo ganhar),
+         o nosso banho, os nossos amaços, a nossa foda gostosa... Sério, é sensacional. Obrigada por me deixar fazer parte da sua vida. E obrigada por fazer parte da minha.</p>
+
+        <p>Frases como "Te amo para sempre","Te quero para sempre" ou "Juntos para sempre" não fazem o meu feitio. Não acho que é assim que as coisas funcionam.
+        Mas se tem um sentimento que sei que terei por você para sempre é gratidão. Você fez uma contribuição e tanto para que eu pudesse estar onde estou.
+        (não que eu seja grande coisa, mas um dia chego lá) E nunca vou esquecer que você me ajudou.</p>
+
+        <p>Acho que qualquer coisa que eu escreva aqui pode acabar sendo repetitivo, você conhece os meus sentimentos, sabe o quanto eu te admiro e o quanto sou feliz por ter 
+        você e todos os presentes em forma de pessoas que você trás consigo. Espero fazer tão bem para você como você faz pra mim.</p>
+        
+        <h1>Não prometo te amar para sempre, mas te amo um dia de cada vez...</h1>
+
+        <div class="bloco-imagens">
+            <div><img src="estilizacao/imagens/11fev2018.jpg" class="imagens_bloco"/> <h4>2018</h4><p> Ano em que começamos à sair, foi o ano que namoramos e que terminamos tmb rs...</p></div>
+            <div><img src="estilizacao/imagens/2019.png" class="imagens_bloco"/> <h4>2019</h4> <p>Ano em que, depois de uns meses do término, voltamos a nos falar. </p></div>
+            <div><img src="estilizacao/imagens/2020.jpg" class="imagens_bloco"/> <h4>2020</h4><p>  Passamos todo esse ano tendo a nossa "Amizade com benefícios"<br> (foi incrível)</p></div>
+           <div> <img src="estilizacao/imagens/2021.jpeg" class="imagens_bloco"/> <h4>2021</h4> <p>Enfim namorando de novo!</p></div>
+        </div>
+        <h1 class="h1-final" >Eu te amo, muito! Feliz dia dos namorados!</h1>
+        <a href="https://api.whatsapp.com/send?phone=5553984646187&text=Oi%2C%20eu%20visitei%20nosso%20site%20e..."> Tá com saudade? Clica aqui e fala comigo!</a>
+        <img src="estilizacao/imagens/icon.png" width="30px"/>
+    </section>
+
+    <div id="modal_fundo" class="modal_fundo_style">
+        <div class="modal_conteudo">
+           <button class="fechar">X</button>
+           <div>
+            <video width="520" height="auto" controls>
+                <source src="estilizacao/imagens/video day 12.mp4" type="video/mp4">
+            <video> 
+        </div>
+       </div>
+   </div>
+       <script>
+           
+var chamamodal = document.querySelector('.bt_post_produto');
+   chamamodal.addEventListener('click', function(){
+           Modal('modal_fundo');
+        });
+
+var Fechamodal = document.querySelector('.fechar');
+  Fechamodal.addEventListener('click', function(){
+           fechaModal('modal_fundo');
+        });
+   
+function Modal(modalID){
+           var modal = document.getElementById(modalID);
+           modal.classList.add('mostrar');
+       }   
+function fechaModal(modalID){
+           var modal = document.getElementById(modalID);
+           modal.classList.remove('mostrar');
+       }
+   
+    
+       </script>
+
+</body>
+</html>

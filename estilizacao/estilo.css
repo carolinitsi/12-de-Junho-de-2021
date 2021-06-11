@@ -1,0 +1,207 @@
+
+@font-face {
+    font-family: amalfi;
+    src: url('fontes/Amalfi\ Coast.ttf');
+}
+@font-face {
+    font-family: future;
+    src: url('fontes/FUTRFW.TTF');
+}
+@font-face {
+    font-family: athena;
+    src: url('fontes/Athena-Regular\ \(PERSONAL\ USE\ ONLY\).ttf');
+}
+@font-face {
+    font-family: sig;
+    src: url('fontes/Signature\ Moments.ttf');
+}
+header{
+    background-image: url("imagens/Design\ sem\ nome\ \(3\).png");  
+    height: 650px;  
+}
+.fundo{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+header img{
+    opacity: 30%;
+}
+.titulo_principal{
+    font-family: amalfi;
+    color: rgb(240, 238, 236);
+    font-size: 90px;
+    letter-spacing: 5px;
+    margin-top: 0;
+    padding-top: 10%;
+    padding-left: 20%;
+    opacity: 90%;
+
+}
+button{
+    background-color: rgba(97, 11, 11, 0.705);
+    border: none;
+    width: 20%;
+    height: 5%;
+    margin-left: 40%;
+    border-radius: 20%;
+    font-family:future ;
+    color: cornsilk;
+}
+button:hover{
+    background-color: rgba(97, 11, 11, 0.993);
+}
+video{
+    width: 100%;
+    height: auto;   
+}
+section{
+    width: 80%;
+    margin: 10%;
+}
+h1{
+    font-family: sig;
+}
+.h1-final{
+    margin-left: 30%;
+    font-size: 15px;
+}
+h4{
+    font-family: future;
+    color: rgba(97, 11, 11, 0.993);
+    background-color: lightgray;
+}
+
+a{
+    font-size: 15px;
+    margin-left: 20%;
+    font-family:future ;
+    letter-spacing: 0px;
+    background-color: rgb(97, 11, 11);
+    color:lightgray;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: initial;
+    cursor: pointer;
+    background-color: lightgray;
+    color:rgb(97, 11, 11);
+}
+p{
+    font-family: athena;
+    letter-spacing: 2px;
+}
+
+.imagens_bloco{
+    width: 100%;
+    height: 300px;
+}
+
+.bloco-imagens{
+    display: flex;
+    padding: 5%;
+}
+.bloco-imagens div{
+    padding: 2%;
+}
+.bloco-imagens p{
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#MODAL
+.mostrar .modal_conteudo{
+    animation: anima_modal .3s;
+}
+.modal_fundo_style{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 5, 0.685);
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index:2000;
+    display:none;
+    
+    justify-content:center;
+    align-items: center;   
+}
+.modal_conteudo{
+    color:white;
+    width:50%;
+    min-width:300px;
+    padding:5%;
+    border-radius:20px;
+    position:relative;
+}
+.modal_conteudo p{
+    color:white;
+}
+
+.modal_fundo_style.mostrar{
+    display:flex;
+}
+.fechar{
+    position:absolute;
+    top:-30px;
+    right:-30px;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:4px;
+    background:rgba(97, 11, 11, 0.705);
+    color:rgb(192, 191, 191);
+    font-family:"PT Mono", monospace;
+    cursor:pointer;
+}
+
+
+
+@media only screen and (max-device-width: 600px) {
+    
+    header{
+        background-image: url("imagens/Design\ sem\ nome\ \(3\).png");
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+        top:0px;
+        left: 0px;
+    }
+    .fundo{
+        width: 100%;
+    }
+    h1{
+        font-size: 14px;
+    }
+    .titulo_principal{
+        font-size: 16px;
+    }
+    section{
+        width: 80%;
+        margin: 10%;
+    }
+    video{
+        width: 100%;
+        height: auto;
+    } 
+    .bloco-imagens{
+        display:block;
+        padding: 5%;
+        width: 80%;
+    }
+    .bloco-imagens div{
+        width: 100%;    
+    }
+    .h1-final{
+        margin-left: 10%;
+        font-size: 15px;
+    }
+    button{
+        width: 80%;
+        height: 20px;
+        margin-left: 10%;
+    }
+}
+ 
